@@ -113,7 +113,7 @@ module.exports = function(grunt) {
         },
         options: {
           browserifyOptions: {
-            standalone: 'JSZip',
+            standalone: 'JSZip2',
             insertGlobalVars : {
               Buffer: function () {
                 // instead of the full polyfill, we just use the raw value
@@ -140,7 +140,7 @@ module.exports = function(grunt) {
       },
       all: {
         src: 'dist/jszip.js',
-        dest: 'dist/jszip.min.js'
+        dest: 'dist/jszip2.min.js'
       }
     }
   });
